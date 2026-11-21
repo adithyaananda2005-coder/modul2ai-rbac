@@ -1,0 +1,73 @@
+{
+  "results": [
+    {
+      "case": "mahasiswa_ssc",
+      "status": 200,
+      "data": {
+        "success": true,
+        "role": "mahasiswa",
+        "answer": "Jam operasional SSC adalah hari Senin sampai Jumat, pukul 08.00 sampai 16.00 WIB. SSC tidak melayani pada hari Sabtu, Minggu, atau di luar jam operasional tersebut.",
+        "sources": [
+          {
+            "document_id": 5,
+            "title": "SSC Operating Hours",
+            "filename": "default_SSC_Operating_Hours.txt",
+            "url": "/uploads/default_SSC_Operating_Hours.txt",
+            "score": 0.8229
+          },
+          {
+            "document_id": 1,
+            "title": "Alur Menghubungi SSC",
+            "filename": "default_Alur_Menghubungi_SSC.txt",
+            "url": "/uploads/default_Alur_Menghubungi_SSC.txt",
+            "score": 0.5169
+          }
+        ]
+      }
+    },
+    {
+      "case": "mahasiswa_internal_ditolak",
+      "status": 200,
+      "data": {
+        "success": true,
+        "role": "mahasiswa",
+        "answer": "Informasi mengenai kode verifikasi moderasi nilai dosen belum tersedia saat ini.",
+        "sources": [
+          {
+            "document_id": 3,
+            "title": "SK TAK TUNC 2025",
+            "filename": "default_SK_TAK_TUNC_2025.pdf",
+            "url": "/uploads/default_SK_TAK_TUNC_2025.pdf",
+            "score": 0.5206
+          },
+          {
+            "document_id": 4,
+            "title": "SK-TAK-2022",
+            "filename": "default_SK-TAK-2022.pdf",
+            "url": "/uploads/default_SK-TAK-2022.pdf",
+            "score": 0.4854
+          }
+        ]
+      }
+    },
+    {
+      "case": "dosen_internal",
+      "status": 200,
+      "data": {
+        "success": true,
+        "role": "dosen",
+        "answer": "Kode verifikasi moderasi adalah MODERASI-8472, dan batas waktu pengirimannya adalah paling lambat 5 hari kerja setelah ujian.",
+        "sources": [
+          {
+            "document_id": 2,
+            "title": "INTERNAL Panduan Dosen Demo",
+            "filename": "default_INTERNAL_Panduan_Dosen_Demo.txt",
+            "url": "/uploads/default_INTERNAL_Panduan_Dosen_Demo.txt",
+            "score": 0.9327
+          }
+        ]
+      }
+    }
+  ],
+  "page_errors": []
+}

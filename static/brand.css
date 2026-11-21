@@ -1,0 +1,41 @@
+/* Local academic theme inspired by Telkom University. */
+:root{--brand:#b5121b;--brand-dark:#8e1017;--brand-light:#fff1f2}
+body{font-family:Inter,"Segoe UI",Arial,sans-serif;background-color:#f5f6f8;color:#20252d}
+body::before{content:"";display:block;height:5px;background:var(--brand);flex-shrink:0}
+[class*="bg-indigo-50"],[class*="bg-violet-50"]{background-color:var(--brand-light)!important}
+[class*="bg-indigo-100"]{background-color:#ffe1e4!important}
+[class*="bg-indigo-500"],[class*="bg-indigo-600"],[class*="bg-indigo-700"]{background-color:var(--brand)!important}
+[class*="text-indigo-"]{color:var(--brand)!important}
+[class*="border-indigo-"]{border-color:#edb8bc!important}
+[class*="from-indigo-"]{background-image:linear-gradient(135deg,var(--brand),#7e1018)!important}
+[class*="hover:bg-indigo-"]:hover{background-color:var(--brand-dark)!important;color:white!important}
+input:focus,select:focus{outline:2px solid #e5a3a8!important;outline-offset:2px;box-shadow:none!important;border-color:var(--brand)!important}
+button,a,input,select{transition:background-color .18s,border-color .18s,box-shadow .18s}
+button:focus-visible,a:focus-visible{outline:3px solid #de959b;outline-offset:3px}
+#userLogin{max-width:1100px;margin:auto;align-items:center;gap:10px;font-size:14px}
+#userLogin input{padding:8px 12px;background:white;border:1px solid #e2d9da;border-radius:8px;min-width:0}
+#userLogin button{padding:8px 14px;border-radius:8px;font-weight:600}
+#userLogin button:not([type="button"]){background:var(--brand);color:white}
+#identityLabel{font-weight:600;margin-right:auto;color:#74121a}
+header{border-top:0;box-shadow:0 2px 10px #20252d05}
+header>div{min-height:76px}
+header .leading-tight>span:first-child{font-size:19px;font-weight:750;letter-spacing:-.5px}
+#welcomeState{border-top:4px solid var(--brand);padding:30px;background:linear-gradient(115deg,#fff 75%,#fff4f4)}
+#welcomeState h1{font-size:clamp(22px,3vw,30px);line-height:1.3;max-width:600px;margin:8px 0 12px;font-weight:750;letter-spacing:-.7px}
+#welcomeState p{font-size:15px;line-height:1.8}
+#welcomeState button{text-align:left;padding:16px;border-radius:12px}
+#welcomeState button:hover{border-color:#c66b72;box-shadow:0 3px 12px #b5121b09}
+#chatForm{border-radius:14px;box-shadow:0 5px 24px #1717170a}
+#chatForm input{font-size:15px}
+#chatBox{scroll-behavior:smooth}
+#loginForm input,#uploadForm input{font-size:14px}
+#roleForm{display:flex;gap:8px;margin:12px 0}
+#roleForm input{min-width:0;flex:1}
+#roleList>div{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid #eee;font-size:14px}
+#roleChoices{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+#roleChoices label{padding:8px 12px;border:1px solid #e4e4e7;border-radius:8px;font-size:14px}
+input[type="checkbox"]{accent-color:var(--brand)}
+.brand-footer{padding:18px 24px;border-top:1px solid #e4e4e7;color:#626772;font-size:12px;text-align:center;background:#fff}
+.brand-footer span{margin-left:16px;color:#868b95}
+@media(max-width:640px){#userLogin{gap:8px}#identityLabel{width:100%}#userLogin input{width:calc(50% - 4px)}#welcomeState{padding:20px}header>div{min-height:70px}.brand-footer span{display:block;margin:5px 0 0}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
